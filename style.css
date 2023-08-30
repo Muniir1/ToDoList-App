@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap');
+
+
+body{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: #4B3A3A;
+}
+.container{
+    margin-top: 10px;
+    background-color: rgb(235, 235, 235);
+    border: none;
+    border-radius: 8px;
+    width: 50%;
+    height: fit-content;
+    text-align: center;
+
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+input{
+    letter-spacing: 0.15rem;
+    position: relative;
+    padding: 10px 20px;
+    background: transparent;
+    outline: none;
+    border: 1px solid #4B3A3A;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#add{
+    padding: 10px 20px;
+    background-color: #4B3A3A;
+    color: white;
+    outline: none;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 0.15rem;
+}
+.textcontainer{
+    font-size: 15px;
+    text-align: left;
+    margin: 30px auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+ul{
+    cursor: pointer;
+    list-style: none;
+}
+
+.outputContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+    border-radius: 5px;
+    background-color: rgb(173, 173, 173);
+    padding: 0.3rem ;
+
+}
+li{
+    flex: 1;
+}
+
+.deletebtn, .checkbtn{
+    padding: 10px 20px;
+    border: nonw;
+    background-color: rgb(181, 37, 37);
+    color: white;
+}
+.checkbtn{
+    background-color: rgb(80, 144, 17);
+}
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        margin: 0;
+        width: 100%;
+
+    }
+    .textcontainer{
+        width: 60%;
+        margin: 20px auto;
+        
+    }
+    .outputContainer{
+        margin: 0 20px 0 0;
+    }
+    .deletebtn{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 480px){
+    .container{
+        margin: 0;
+        width: 100%;
+
+    }
+    .textcontainer{
+        width: 90%;
+        margin: 20px auto;
+        
+    }
+    .outputContainer{
+        margin: 0 20px 0 0;
+    }
+    .deletebtn{
+        margin: 0;
+    }
+}
